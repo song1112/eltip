@@ -42,18 +42,15 @@
                     {% load staticfiles %}
                     <img class="img-responsive" src="{% static "img/profile.png" %}" alt="">
                     <div class="intro-text">
-                        <h1>王大大</h1>
+                        <h1>{{ name }}</h1>
                         <hr class="star-light">
-                        <p>東西牛排 - 服務員</p>
+                        <p>{{ company }} - {{ position }}</p>
                          <div class="col-lg-12 col-lg-offset-2 text-center">
                              <div class="col-lg-4 col-lg-offset-2 text-center">
-                                <form action=save_personal.asp method="post" style="display:inline">
-                                <input type="submit" class="btn-outline" name="button" id="button" value="30" />
-                                <input type="submit" class="btn-outline" name="button" id="button" value="50" />
-                                <input type="submit" class="btn-outline" name="button" id="button" value="100" />
+				<a href="https://qr.allpay.com.tw/xnjn4" class="btn-outline"></i> 支持</a>   
                                 </form>
                             </div>
-                             <a href="#" class="btn btn-outline">
+                             <a href="{% url 'eltip_user.views.index' %}" class="btn btn-outline">
                                  </i> Find Other
                              </a>
                            
