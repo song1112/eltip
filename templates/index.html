@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ElTip</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    {% load staticfiles %}
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{% static "css/freelancer.css" %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    {% load staticfiles %}
+                    <img class="img-responsive" src="{% static "img/profile.png" %}" alt="">
+                    <div class="intro-text">
+                        <span class="skills">尋找並支持你的服務員</span>
+                        <hr class="star-light">
+                         <div class="col-lg-12 col-lg-offset-2 text-center">
+                             <div class="col-lg-4 col-lg-offset-2 text-center">
+                            <input type="text" class="form-control" placeholder="輸入服務員帳號或名字" id="find">
+                                <input type="submit" class="btn btn-outline" name="button" id="button" value="Find" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+ 
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About Us</h2>
+                    <hr class="star-primary">
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p>我們是一個電子小費箱，你是顧客想感謝你的服務員嗎？你可以簡單的輸入服務員的名字或ID尋找服務員，並且給予小費！你是服務員希望能夠收到顧客的感謝嗎？</p>
+                    <p>歡迎加入我們</p>
+                    <a href="#" class="btn btn-success btn-lg">
+                        </i> 註冊
+                    </a>
+                    <hr class="star-primary">
+                    <p>已經是會員嗎？</p>
+                    <a href="#" class="btn btn-success btn-lg">
+                        </i> 登入
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+  
+    <!-- jQuery -->
+    {% load staticfiles %}
+    <script src="{% static "js/jquery.js" %}"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="{% static "js/classie.js" %}"></script>
+    <script src="{% static "js/cbpAnimatedHeader.js" %}"></script>
+
+
+</body>
+
+</html>
